@@ -15,8 +15,12 @@ class MusicPresenter {
     var presenterToMusicSubject = PublishSubject<[Music]>()
     
     private let httpClient = HttpClient()
-    private let itunesAPIURL =
-    "https://itunes.apple.com/search"
+    private var itunesAPIURL: String = ""
+    
+    init() {
+        let value = Bundle.main.infoDictionary?["ITUNES_API_ENDPOINT"] as! String
+        self.itunesAPIURL = value
+    }
     
     var player : AVPlayer?
     var isPlaying = false

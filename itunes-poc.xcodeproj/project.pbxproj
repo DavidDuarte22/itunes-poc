@@ -16,14 +16,18 @@
 		03091027230061D8004D63D3 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03091026230061D8004D63D3 /* MusicCell.swift */; };
 		0309102923006785004D63D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309102823006785004D63D3 /* MainViewController.swift */; };
 		03B45C7422F9A35F00BF6493 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B45C7322F9A35F00BF6493 /* MoviesPresenter.swift */; };
-		03B45C7622F9A3F100BF6493 /* MediaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B45C7522F9A3F100BF6493 /* MediaEnum.swift */; };
 		03B45C7822FC6CA500BF6493 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B45C7722FC6CA500BF6493 /* Movie.swift */; };
 		03B45C7A22FC6CF200BF6493 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B45C7922FC6CF200BF6493 /* TvShow.swift */; };
 		03B45C7C22FC6D1E00BF6493 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B45C7B22FC6D1E00BF6493 /* Music.swift */; };
+		03E1A3A1230C455A00C89CCA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1A3A0230C455A00C89CCA /* MovieCell.swift */; };
+		03E1A3A4230C459000C89CCA /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E1A3A3230C459000C89CCA /* MovieCell.xib */; };
 		03F43288230485670048A5B0 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F43287230485670048A5B0 /* TableViewExtensions.swift */; };
 		03F432912305A18E0048A5B0 /* SongPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F4328F2305A18E0048A5B0 /* SongPlayerController.swift */; };
 		03F432922305A18E0048A5B0 /* SongPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F432902305A18E0048A5B0 /* SongPlayerController.xib */; };
+		03F48F05230D890B007E91C9 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F48F04230D890B007E91C9 /* SpinnerViewController.swift */; };
 		03F58EC5230A0BD600453B50 /* ModalMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F58EC4230A0BD600453B50 /* ModalMusic.swift */; };
+		03FC052B230EC24C0089CCCB /* TvShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC052A230EC24C0089CCCB /* TvShowCell.xib */; };
+		03FC052D230ED1AB0089CCCB /* TvShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC052C230ED1AA0089CCCB /* TvShowCell.swift */; };
 		03FD367722F5D978003718E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD367622F5D978003718E7 /* AppDelegate.swift */; };
 		03FD367E22F5D979003718E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FD367D22F5D979003718E7 /* Assets.xcassets */; };
 		03FD368122F5D979003718E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FD367F22F5D979003718E7 /* LaunchScreen.storyboard */; };
@@ -52,14 +56,18 @@
 		03091026230061D8004D63D3 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		0309102823006785004D63D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		03B45C7322F9A35F00BF6493 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
-		03B45C7522F9A3F100BF6493 /* MediaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaEnum.swift; sourceTree = "<group>"; };
 		03B45C7722FC6CA500BF6493 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		03B45C7922FC6CF200BF6493 /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		03B45C7B22FC6D1E00BF6493 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		03E1A3A0230C455A00C89CCA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		03E1A3A3230C459000C89CCA /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		03F43287230485670048A5B0 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
 		03F4328F2305A18E0048A5B0 /* SongPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerController.swift; sourceTree = "<group>"; };
 		03F432902305A18E0048A5B0 /* SongPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongPlayerController.xib; sourceTree = "<group>"; };
+		03F48F04230D890B007E91C9 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		03F58EC4230A0BD600453B50 /* ModalMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMusic.swift; sourceTree = "<group>"; };
+		03FC052A230EC24C0089CCCB /* TvShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvShowCell.xib; sourceTree = "<group>"; };
+		03FC052C230ED1AA0089CCCB /* TvShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCell.swift; sourceTree = "<group>"; };
 		03FD367322F5D978003718E7 /* itunes-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "itunes-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FD367622F5D978003718E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FD367D22F5D979003718E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +126,6 @@
 				03F4328323044FBB0048A5B0 /* Resources */,
 				0309101022FF5D11004D63D3 /* MusicTableViewController.swift */,
 				03F4328F2305A18E0048A5B0 /* SongPlayerController.swift */,
-				03F432902305A18E0048A5B0 /* SongPlayerController.xib */,
 				03F58EC4230A0BD600453B50 /* ModalMusic.swift */,
 			);
 			path = Music;
@@ -127,6 +134,7 @@
 		0309102A230073EB004D63D3 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				03E1A3A2230C457400C89CCA /* Resources */,
 				0309100E22FF5A7E004D63D3 /* MoviesTableViewController.swift */,
 			);
 			path = Movies;
@@ -136,14 +144,26 @@
 			isa = PBXGroup;
 			children = (
 				0309101222FF5D1D004D63D3 /* TvShowTableViewController.swift */,
+				03FC052A230EC24C0089CCCB /* TvShowCell.xib */,
+				03FC052C230ED1AA0089CCCB /* TvShowCell.swift */,
 			);
 			path = "Tv Shows";
+			sourceTree = "<group>";
+		};
+		03E1A3A2230C457400C89CCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03E1A3A3230C459000C89CCA /* MovieCell.xib */,
+				03E1A3A0230C455A00C89CCA /* MovieCell.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		03F4328323044FBB0048A5B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				03091026230061D8004D63D3 /* MusicCell.swift */,
+				03F432902305A18E0048A5B0 /* SongPlayerController.xib */,
 				030114A32303139300A5AC2C /* MusicCell.xib */,
 			);
 			path = Resources;
@@ -205,7 +225,7 @@
 		03FD369F22F5DBAD003718E7 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				03B45C7522F9A3F100BF6493 /* MediaEnum.swift */,
+				03F48F04230D890B007E91C9 /* SpinnerViewController.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -345,10 +365,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FC052B230EC24C0089CCCB /* TvShowCell.xib in Resources */,
 				030114A42303139300A5AC2C /* MusicCell.xib in Resources */,
 				03F432922305A18E0048A5B0 /* SongPlayerController.xib in Resources */,
 				03FD368122F5D979003718E7 /* LaunchScreen.storyboard in Resources */,
 				03FD367E22F5D979003718E7 /* Assets.xcassets in Resources */,
+				03E1A3A4230C459000C89CCA /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B45C7A22FC6CF200BF6493 /* TvShow.swift in Sources */,
+				03E1A3A1230C455A00C89CCA /* MovieCell.swift in Sources */,
 				0309101122FF5D11004D63D3 /* MusicTableViewController.swift in Sources */,
-				03B45C7622F9A3F100BF6493 /* MediaEnum.swift in Sources */,
 				03FD367722F5D978003718E7 /* AppDelegate.swift in Sources */,
 				0309100F22FF5A7E004D63D3 /* MoviesTableViewController.swift in Sources */,
 				0309101322FF5D1D004D63D3 /* TvShowTableViewController.swift in Sources */,
@@ -444,7 +466,9 @@
 				03B45C7822FC6CA500BF6493 /* Movie.swift in Sources */,
 				03F43288230485670048A5B0 /* TableViewExtensions.swift in Sources */,
 				03091027230061D8004D63D3 /* MusicCell.swift in Sources */,
+				03FC052D230ED1AB0089CCCB /* TvShowCell.swift in Sources */,
 				03F432912305A18E0048A5B0 /* SongPlayerController.swift in Sources */,
+				03F48F05230D890B007E91C9 /* SpinnerViewController.swift in Sources */,
 				0309101522FF5DE2004D63D3 /* TvShowPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX922T2Y56;
 				INFOPLIST_FILE = "itunes-poc/Info.plist";
+				ITUNES_API_ENDPOINT = "https://itunes.apple.com/search";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX922T2Y56;
 				INFOPLIST_FILE = "itunes-poc/Info.plist";
+				ITUNES_API_ENDPOINT = "https://itunes.apple.com/search";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

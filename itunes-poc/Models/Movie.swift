@@ -13,6 +13,7 @@ class Movie: Codable {
     var trackName: String?
     var artworkUrl100: URL?
     var longDescription: String?
+    var previewUrl: URL?
     
     init() {
         

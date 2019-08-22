@@ -14,6 +14,8 @@ class Music: Codable {
     var artistName: String?
     var artworkUrl100: URL?
     var previewUrl: URL?
+    var trackPrice: Double?
+    var currency: String?
     init() {
         
     }
@@ -22,7 +24,7 @@ class Music: Codable {
 class MusicResults: Codable {
     var resultCount: Int?
     var results: [Music]?
-    
+    var trackPrice: Double?
     init() {
         
     }

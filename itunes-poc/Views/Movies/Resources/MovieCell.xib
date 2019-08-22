@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="100" id="1tE-S7-D2O" customClass="MovieCell" customModule="itunes_poc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1tE-S7-D2O" id="vgU-1G-UA8">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyImage" translatesAutoresizingMaskIntoConstraints="NO" id="M1m-ic-EOn">
+                        <rect key="frame" x="10" y="10" width="79.5" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="M1m-ic-EOn" secondAttribute="height" multiplier="1:1" id="9D1-We-d0o"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo no disponible" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-ke-GGB">
+                        <rect key="frame" x="114.5" y="20" width="289.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista desconocido" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22E-LL-7rb">
+                        <rect key="frame" x="114.5" y="45.5" width="289.5" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="Wgv-Wf-sdg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M1m-ic-EOn" firstAttribute="top" secondItem="vgU-1G-UA8" secondAttribute="top" constant="10" id="3hC-m3-S9E"/>
+                    <constraint firstAttribute="trailing" secondItem="22E-LL-7rb" secondAttribute="trailing" constant="10" id="4Lk-jw-tvi"/>
+                    <constraint firstItem="f6t-ke-GGB" firstAttribute="leading" secondItem="M1m-ic-EOn" secondAttribute="trailing" constant="25" id="66E-JE-Cz9"/>
+                    <constraint firstAttribute="bottom" secondItem="M1m-ic-EOn" secondAttribute="bottom" constant="10" id="KSX-j2-F8R"/>
+                    <constraint firstItem="22E-LL-7rb" firstAttribute="top" secondItem="f6t-ke-GGB" secondAttribute="bottom" constant="5" id="SAM-p8-UUO"/>
+                    <constraint firstItem="22E-LL-7rb" firstAttribute="leading" secondItem="M1m-ic-EOn" secondAttribute="trailing" constant="25" id="Wth-BJ-faQ"/>
+                    <constraint firstItem="f6t-ke-GGB" firstAttribute="top" secondItem="vgU-1G-UA8" secondAttribute="top" constant="20" id="YKm-tC-tjC"/>
+                    <constraint firstAttribute="trailing" secondItem="f6t-ke-GGB" secondAttribute="trailing" constant="10" id="aj5-xJ-FCe"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="22E-LL-7rb" secondAttribute="bottom" constant="10" id="gAR-o3-EcP"/>
+                    <constraint firstItem="M1m-ic-EOn" firstAttribute="leading" secondItem="vgU-1G-UA8" secondAttribute="leading" constant="10" id="m5Z-AA-mWw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="longDescription" destination="22E-LL-7rb" id="ULG-dQ-fmW"/>
+                <outlet property="movieImage" destination="M1m-ic-EOn" id="mq9-AK-veC"/>
+                <outlet property="movieName" destination="f6t-ke-GGB" id="qwC-N1-j6v"/>
+            </connections>
+            <point key="canvasLocation" x="278.26086956521743" y="49.888392857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EmptyImage" width="800" height="800"/>
+    </resources>
+</document>

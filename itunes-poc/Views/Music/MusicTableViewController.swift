@@ -16,6 +16,7 @@ class MusicTableViewController: UITableViewController {
     
     let searchBar:UISearchBar = UISearchBar()
     var haveSearched: Bool = false
+    let spinner = SpinnerViewController()
     
     var nextState: SongPlayerState {
         return songPlayerVisible ? .collapsed : .expanded
@@ -33,7 +34,7 @@ class MusicTableViewController: UITableViewController {
     
     // Current visible state of the card
     var songPlayerVisible = false
-    
+
     // Empty property animator array
     var runningAnimations = [UIViewPropertyAnimator]()
     var animationProgressWhenInterrupted:CGFloat = 0
@@ -65,6 +66,9 @@ class MusicTableViewController: UITableViewController {
         subject.subscribe(
             onNext: {(songs) in
                 self.songs = songs
+                self.spinner.willMove(toParent: nil)
+                self.spinner.view.removeFromSuperview()
+                self.spinner.removeFromParent()
                 self.tableView.reloadData()
         },
             onError: {(error) in
@@ -78,7 +82,18 @@ class MusicTableViewController: UITableViewController {
         cell.trackNameString = songs[indexPath.row].trackName
         cell.artistNameString = songs[indexPath.row].artistName
         cell.albumUImageURL = songs[indexPath.row].artworkUrl100
-        return cell
+        
+        if let price = songs[indexPath.row].trackPrice {
+            let price = price as NSNumber
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "en_US")
+            cell.priceString = formatter.string(from: price)
+            return cell
+        } else {
+            cell.buyButton.isHidden = true
+            return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,7 +108,7 @@ class MusicTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 80
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -112,6 +127,10 @@ extension MusicTableViewController: UISearchBarDelegate {
             self.haveSearched = true
             searchBar.resignFirstResponder()
             self.presenter.retrieveMusic(artist: searchBarText)
+            addChild(spinner)
+            spinner.view.frame = view.frame
+            view.addSubview(spinner.view)
+            spinner.didMove(toParent: self)
         }
     }
 }
