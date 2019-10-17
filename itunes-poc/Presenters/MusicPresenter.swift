@@ -14,7 +14,7 @@ class MusicPresenter {
     
     var presenterToMusicSubject = PublishSubject<[Music]>()
     
-    private let httpClient = HttpClient()
+    private let httpClient = HttpClient.shared
     private var itunesAPIURL: String = ""
     
     init() {

@@ -20,7 +20,7 @@ class MoviesPresenter {
     }
     var presenterMovieSubject = PublishSubject<[Movie]>()
     
-    private let httpClient = HttpClient()
+    private let httpClient = HttpClient.shared
     
     
     // trim and replace whitespace in string inserted by user
